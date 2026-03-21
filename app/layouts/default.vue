@@ -113,7 +113,7 @@ const links = computed<NavigationMenuItem[][]>(() => [
     {
       label: 'GitHub',
       icon: GitHubIcon,
-      to: 'https://github.com/bitrix24/templates-dashboard-vue',
+      to: 'https://github.com/bitrix24/templates-dashboard',
       target: '_blank'
     }
   ]
