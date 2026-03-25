@@ -7,7 +7,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: `${config.public.baseUrl}favicon.ico` }
+    { rel: 'icon', href: `${config.app.baseURL}favicon.ico?v=2` }
   ],
   htmlAttrs: {
     lang: 'en',
@@ -18,9 +18,6 @@ useHead({
 const title = 'Nuxt Dashboard Template'
 const description = 'A professional dashboard template built with Bitrix24 UI, featuring multiple pages, data visualization, and comprehensive management capabilities for creating powerful admin interfaces.'
 
-/**
- * @todo fix img
- */
 useSeoMeta({
   title,
   description,
