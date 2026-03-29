@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import type { Notification } from '~/types'
-import {formatTimeAgo, useFetch} from '@vueuse/core'
-import type {Mail} from "../types";
+import type { Notification } from '../types'
+import { formatTimeAgo } from '@vueuse/core'
 
 const { isBitrixMobile } = useDevice()
 const { isNotificationsSlideoverOpen } = useDashboard()
 
-const { data: notifications } = await useFetch('/api/notifications', { initialData: [] }).json<Notification[]>()
+const { data: notifications } = await useFetch<Notification[]>('/api/notifications')
 </script>
 
 <template>
