@@ -10,6 +10,7 @@ import Bitrix24Icon from '@bitrix24/b24icons-vue/common-service/Bitrix24Icon'
 import TelegramIcon from '@bitrix24/b24icons-vue/outline/TelegramIcon'
 import GitHubIcon from '@bitrix24/b24icons-vue/social/GitHubIcon'
 import HamburgerMenuIcon from '@bitrix24/b24icons-vue/outline/HamburgerMenuIcon'
+import DeveloperResourcesIcon from '@bitrix24/b24icons-vue/outline/DeveloperResourcesIcon'
 
 const route = useRoute()
 const toast = useToast()
@@ -57,6 +58,14 @@ const links = computed<NavigationMenuItem[][]>(() => [
       label: 'Customers',
       icon: GroupIcon,
       to: '/customers',
+      onSelect: () => {
+        open.value = false
+      }
+    },
+    {
+      label: 'Test Page',
+      icon: DeveloperResourcesIcon,
+      to: '/tst-page',
       onSelect: () => {
         open.value = false
       }
